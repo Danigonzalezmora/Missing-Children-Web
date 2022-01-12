@@ -1,0 +1,1999 @@
+/*
+form.buscar
+
+form.empresas
+
+.glass.over.perdidos
+
+.glass.over.novedades
+
+.glass.cards*/
+
+
+
+
+
+/* Estilos Generales */
+
+:root {
+    --glass-backgound: radial-gradient(94.11% 513.95% at 0% 0%, rgba(255, 255, 255, 0.42) 0%, rgba(255, 255, 255, 0.06) 100%);
+    --glass-blend: normal;
+    --glass-shadow: 4px 4px 20px rgba(0, 0, 0, 0.1);
+    --glass-backdrop-filter: blur(20px);
+    --glass-border-radius: 15px;
+    --color1: #133C40;
+    --color2: #064886;
+    --color3: #4298D3;
+    --color4: #F7B05B;
+    --color5: #FDFCE7;
+}
+
+
+* {
+    font-family: 'Lato', sans-serif;
+    font-size: 10px;
+    color: var(--color1);
+    margin: 0em;
+    padding: 0em;
+}
+
+a {
+    text-decoration: none;
+}
+
+.logo-principal {
+    width: 4.5rem;
+    height: 4.5rem;
+}
+
+.logo-missing-desktop {
+    display: none;
+}
+
+.menu-hamburguesa {
+    width: 2.4rem;
+    height: 2.4rem;
+}
+
+.logo-footer {
+    width: 10rem;
+    height: 6rem;
+}
+
+.youtube,
+.facebook,
+.instagram {
+    width: 2.4rem;
+    height: 2.4rem;
+}
+
+.card>.boton-slide {
+    width: 6.5%;
+    transform: rotate(-90deg);
+    position: absolute;
+    right: 10%;
+}
+
+.glass-over>.boton-slide {
+    width: 10%;
+    transform: rotate(-90deg);
+    margin: 0 auto 5% auto;
+}
+
+h1 {
+    color: var(--color1);
+    font-weight: 800;
+    font-size: 1.9rem;
+}
+
+h2 {
+    font-weight: 900;
+    font-size: 1.4rem;
+    text-transform: uppercase;
+    color: white;
+}
+
+h4 {
+    font-weight: 300;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    color: white;
+}
+
+h3 {
+    color: var(--color1);
+    font-weight: 900;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+}
+
+h5 {
+    font-weight: 700;
+    font-size: 1rem;
+}
+
+p {
+    font-weight: 300;
+    font-size: 1.2rem;
+    color: white;
+}
+
+::placeholder {
+    color: white;
+}
+
+button {
+    background: #F7B05B;
+    border-radius: 59px;
+    width: 42vw;
+    height: 40px;
+    text-transform: uppercase;
+    font-weight: 900;
+    font-size: 1.2rem;
+    margin: 2%;
+}
+
+body {
+    background: radial-gradient(100% 100% at 0% 0%, #133C40 0%, #084887 50.35%, #133C40 100%);
+    width: 100vw;
+}
+
+hr {
+    width: 80%;
+    margin: auto;
+    height: 1px;
+    background-color: white;
+    border: none;
+    margin: 10% auto 10% auto;
+}
+
+
+/* Home */
+
+
+article {
+    margin: 5% auto 5% auto;
+}
+
+header.home {
+    width: 100vw;
+    height: 450px;
+    background-image: url(./imagenes/mobile-home-header-background.jpg);
+    background-size: auto;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: grid;
+    grid-template-columns: 50vw 50vw;
+    grid-template-rows: 60% 40%;
+}
+
+.nav-mobile {
+    background: radial-gradient(94.11% 513.95% at 0% 0%, rgba(255, 255, 255, 0.42) 0%, rgba(255, 255, 255, 0.06) 100%);
+    mix-blend-mode: normal;
+    box-shadow: 4px 4px 20px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(20px);
+    border-radius: 0 0 15px 15px;
+    width: 100vw;
+    height: 61px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-sizing: border-box;
+    padding: 0 5% 0 5%;
+}
+
+.nav-desktop {
+    display: none;
+}
+
+header>.botones.home {
+    width: 40vw;
+    display: grid;
+    grid-column: 2 / 3;
+    align-self: center;
+}
+
+header>h2 {
+    color: var(--color1);
+    width: 49vw;
+    display: grid;
+    grid-column: 2 / 3;
+    align-self: flex-end;
+    text-align: right;
+    box-sizing: border-box;
+    padding-right: 2rem;
+    padding-bottom: 3rem;
+}
+
+
+/* contador home */
+.contador {
+    width: 90vw;
+    justify-content: center;
+    align-items: center;
+}
+
+.contador>h4 {
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+ul {
+    list-style: none;
+    display: flex;
+    flex-flow: row;
+}
+
+li {
+    width: 4rem;
+    height: 4rem;
+    background: radial-gradient(100% 100% at 0% 0%, rgba(255, 255, 255, 0.7) 0%, rgba(255, 255, 255, 0) 100%);
+    backdrop-filter: blur(20px);
+    border-radius: 10px;
+    font-weight: 900;
+    font-size: 2.5rem;
+    color: var(--color5);
+    margin: 0.5rem auto 0.5rem auto;
+    text-align: center;
+    padding-top: 2%;
+}
+
+/* termina contador */
+
+
+.home.objetivos,
+.home.novedades {
+    width: 100vw;
+    height: 35%;
+    background: radial-gradient(94.11% 513.95% at 0% 0%, rgba(255, 255, 255, 0.42) 0%, rgba(255, 255, 255, 0.06) 100%);
+    mix-blend-mode: normal;
+    box-shadow: 4px 4px 20px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(20px);
+    border-radius: 15px;
+    text-align: center;
+    box-sizing: border-box;
+    padding: 3rem;
+}
+
+.objetivos>p,
+.novedades>p {
+    margin: 1rem auto 1.5rem auto;
+}
+
+.home.conoce {
+    width: 100vw;
+    height: 255px;
+    background-image: url(./imagenes/mobile-home-chicos-perdidos.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    box-sizing: border-box;
+    padding: 15% 8% 0 8%;
+    text-align: center;
+}
+
+.conoce>.over-glass {
+    width: 100%;
+    color: var(--color1);
+    background: radial-gradient(96.42% 525.19% at 3.58% 6.88%, rgba(255, 255, 255, 0.56) 0%, rgba(255, 255, 255, 0.08) 100%);
+    box-shadow: 4px 4px 20px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(15px);
+    border-radius: 15px;
+    text-align: center;
+    box-sizing: border-box;
+    padding: 5.2%;
+}
+
+.over-glass>p {
+    color: var(--color1);
+    font-weight: 400;
+}
+
+.over-glass>button {
+    margin: 5% auto 0 auto;
+}
+
+.home.novedades>button {
+    margin: 5% auto 0 auto;
+}
+
+.home.equipo {
+    display: none;
+}
+
+.estamos-ayudarte {
+    display: none;
+}
+
+/*footer*/
+
+.footer-desktop {
+    display: none;
+}
+
+.footer-mobile {
+    background: radial-gradient(100% 9216% at 0% 0%, rgba(255, 255, 255, 0.7) 0.19%, rgba(8, 72, 135, 0.14) 100%);
+    border: 2px solid rgba(255, 255, 255, 0.3);
+    box-sizing: border-box;
+    backdrop-filter: blur(40px);
+    border-radius: 15px 15px 0px 0px;
+    height: 120px;
+    width: 100vw;
+    display: grid;
+    grid-template-columns: 1fr 1.2fr 1fr;
+    gap: 2%;
+    box-sizing: border-box;
+    padding: 3%;
+    margin-top: 5%;
+}
+
+.redes {
+    display: grid;
+    grid-column: 1 / 2;
+}
+
+.logo-footer {
+    margin: 0 auto 2% auto;
+
+}
+
+.contacto {
+    display: grid;
+    grid-column: 2 / 3;
+}
+
+footer p {
+    font-size: 1rem;
+    font-weight: 400;
+    color: white;
+    line-height: 0;
+}
+
+footer h3 {
+    font-size: 1.2rem;
+    font-weight: 900;
+    color: white;
+    margin-bottom: 2%;
+}
+
+.iconos {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.newsletter {
+    display: grid;
+    grid-column: 3 / 4;
+    display: flex;
+    flex-flow: column;
+}
+
+.boton-footer {
+    width: 100%;
+    height: 30%;
+    font-size: 1rem;
+    margin: 10% 0 0 0;
+}
+
+/*termina footer*/
+
+
+
+
+/* Chicos Pedidos */
+
+header.chicosperdidos {
+    width: 100vw;
+    height: 250px;
+    background-image: url(./imagenes/mobile-chicosperdidos-header-background.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: right;
+}
+
+header~h1 {
+    display: none;
+}
+
+/*busqueda*/
+form.buscar {
+    width: 90vw;
+    height: 40px;
+    background: radial-gradient(100% 1877.78% at 0% 0%, rgba(255, 255, 255, 0.42) 0%, rgba(255, 255, 255, 0.06) 100%);
+    backdrop-filter: blur(20px);
+    border-radius: 50px;
+    margin: 5% auto 5% auto;
+    text-transform: uppercase;
+    font-weight: 900;
+    font-size: 1rem;
+    display: flex;
+    flex-flow: row;
+    justify-content: space-between;
+}
+
+form.buscar>input#buscar {
+    all: unset;
+    margin-left: 5%;
+}
+
+form.buscar>input[type=submit] {
+    width: 30%;
+    height: 40px;
+    font-size: 1.2rem;
+    font-weight: 900;
+    background: radial-gradient(100% 3938.02% at 0% 0%, #F7B05B 0%, #F7B05B 100%);
+    border-radius: 47px;
+}
+
+/*termina buscador*/
+
+section.chicosperdidos {
+    width: 90vw;
+    display: flex;
+    flex-flow: column;
+    margin: auto;
+}
+
+section.chicosperdidos>article {
+    height: 400px;
+    display: flex;
+    flex-flow: column;
+    justify-content: flex-end;
+}
+
+article>.card {
+    height: 120px;
+    background: radial-gradient(96.42% 525.19% at 3.58% 6.88%, rgba(255, 255, 255, 0.56) 0%, rgba(255, 255, 255, 0.08) 100%);
+    box-shadow: 4px 4px 20px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(15px);
+    border-radius: 30px 30px 0px 0px;
+    display: flex;
+    flex-flow: column;
+    box-sizing: border-box;
+    padding: 8% 15% 8% 8%;
+}
+
+.card>p {
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: var(--color1);
+    margin: 2% 0 1% 0;
+}
+
+.card>h3 {
+    font-size: 1.3rem;
+}
+
+.card>p+p {
+    font-style: oblique;
+}
+
+p.show {
+    display: none;
+}
+
+article.perdido {
+    height: 400px;
+    width: 90vw;
+}
+
+article.perdido.chico-uno {
+    background-image: url(./imagenes/chicosperdidos-chico-uno.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 70%;
+}
+
+article.perdido.chico-dos {
+    background-image: url(./imagenes/chicosperdidos-chico-dos.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 55%;
+}
+
+article.perdido.chico-tres {
+    background-image: url(./imagenes/chicosperdidos-chico-tres.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+article.perdido.chico-cuatro {
+    display: none;
+    background-image: url(./imagenes/chicosperdidos-chico-cuatro.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+article.perdido.chico-cinco {
+    display: none;
+    background-image: url(./imagenes/chicosperdidos-chico-cinco.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+article.perdido.chico-seis {
+    display: none;
+    background-image: url(./imagenes/chicosperdidos-chico-seis.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 80%;
+}
+
+article.perdido.chico-siete {
+    display: none;
+    background-image: url(./imagenes/chicosperdidos-chico-siete.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: left;
+}
+
+article.perdido.chico-ocho {
+    display: none;
+    background-image: url(./imagenes/chicosperdidos-chico-ocho.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+article.perdido.chico-nueve {
+    display: none;
+    background-image: url(./imagenes/chicosperdidos-chico-nueve.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 75%;
+}
+
+button.ver-mas {
+    margin: 10% auto 0 auto;
+    display: block;
+}
+
+
+
+/*novedades*/
+
+
+header.novedades {
+    height: 250px;
+    background-image: url(./imagenes/mobile-novedades-header-background.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 55%;
+}
+
+section.novedades>article {
+    width: 90vw;
+    display: flex;
+    flex-flow: column;
+    justify-content: flex-end;
+}
+
+article>.glass-over {
+    height: 100px;
+    background: radial-gradient(96.42% 525.19% at 3.58% 6.88%, rgba(255, 255, 255, 0.56) 0%, rgba(255, 255, 255, 0.08) 100%);
+    box-shadow: 4px 4px 20px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(15px);
+    border-radius: 30px 30px 0px 0px;
+    display: flex;
+    flex-flow: column;
+    box-sizing: border-box;
+    padding: 10% 10% 10% 10%;
+}
+
+.glass-over>h3 {
+    margin: auto;
+}
+
+.glass-over>button {
+    display: none;
+}
+
+.glass-over>p {
+    display: none;
+}
+
+article.convenio {
+    width: 90vw;
+    height: 300px;
+    background-image: url(./imagenes/novedades-home.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 70%;
+}
+
+article.diamond {
+    width: 100vw;
+    height: 400px;
+    background-image: url(./imagenes/novedades-diamond-film.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+article.proyecto {
+    width: 100vw;
+    height: 240px;
+    background-image: url(./imagenes/novedades-proyecto-no-encontrado.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+
+/* voluntariado */
+
+header.voluntariado {
+    height: 250px;
+    background-image: url(./imagenes/mobile-voluntariado-header-background.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.button-bar {
+    width: 90vw;
+    height: 40px;
+    background: radial-gradient(100% 1877.78% at 0% 0%, rgba(255, 255, 255, 0.42) 0%, rgba(255, 255, 255, 0.06) 100%);
+    backdrop-filter: blur(20px);
+    border-radius: 50px;
+    margin: 5% auto 5% auto;
+    box-sizing: border-box;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    text-align: center;
+}
+
+.button-donacion {
+    all: unset;
+    grid-column: 1 / 2;
+}
+
+.button-voluntariado {
+    all: unset;
+    grid-column: 2 / 3;
+}
+
+.button-empresa {
+    width: 90%;
+    grid-column: 3 / 4;
+    margin: 0;
+    background: radial-gradient(100% 3938.02% at 0% 0%, #FBFCFD 0%, rgba(255, 255, 255, 0.4) 100%);
+    border-radius: 47px;
+    justify-self: end;
+    font-weight: 900;
+}
+
+.button-donacion>a,
+.button-voluntariado>a {
+    font-size: 1.2rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: white;
+}
+
+.button-empresa>a {
+    font-size: 1.2rem;
+    font-weight: 900;
+    text-transform: uppercase;
+    color: var(--color1);
+}
+
+hr+h2 {
+    width: 60%;
+    margin: 0 0 5% 5%;
+}
+
+section.informacion {
+    background: radial-gradient(100% 9216% at 0% 0%, rgba(255, 255, 255, 0.5) 0.19%, rgba(255, 255, 255, 0.075) 100%);
+    border: 2px solid rgba(255, 255, 255, 0.1);
+    box-sizing: border-box;
+    backdrop-filter: blur(10px);
+}
+
+article.financiamiento,
+article.corporativo {
+    box-sizing: border-box;
+    padding: 5%;
+    display: grid;
+    grid-template-columns: 60% 40%;
+    grid-template-rows: 20% 80%;
+    gap: 5%;
+}
+
+article.financiamiento>p,
+article.corporativo>p {
+    grid-column: 1 / 2;
+    grid-row: 1/ 3;
+    text-align: right;
+    font-size: 1.2rem;
+}
+
+article.financiamiento>img,
+article.corporativo>img {
+    grid-column: 2 / 3;
+    grid-row: 2 / 3;
+    margin: 0 auto 0 auto;
+}
+
+article.financiamiento>h3,
+article.corporativo>h3 {
+    grid-column: 2 / 3;
+    grid-row: 1 / 2;
+    font-size: 1.2rem;
+    font-weight: 900;
+    color: var(--color4);
+    margin: 0 5% 0 0;
+}
+
+article.redessociales {
+    box-sizing: border-box;
+    padding: 5%;
+    display: grid;
+    grid-template-columns: 40% 60%;
+    grid-template-rows: 20% 80%;
+    gap: 5%;
+}
+
+article.redessociales>p {
+    grid-column: 2 / 3;
+    grid-row: 1/ 3;
+    text-align: left;
+    font-size: 1.2rem;
+}
+
+article.redessociales>img {
+    grid-column: 1 / 2;
+    grid-row: 2 / 3;
+    margin: 0 auto 0 auto;
+}
+
+article.redessociales>h3 {
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+    font-size: 1.2rem;
+    font-weight: 900;
+    color: var(--color4);
+    margin: 0 5% 0 0;
+    text-align: right;
+}
+
+section.formulario {
+    width: 100vw;
+    height: 680px;
+    background: radial-gradient(100% 9216% at 0% 0%, rgba(255, 255, 255, 0.5) 0.19%, rgba(255, 255, 255, 0.075) 100%);
+    border: 2px solid rgba(255, 255, 255, 0.1);
+    box-sizing: border-box;
+    backdrop-filter: blur(10px);
+}
+
+form {
+    width: 90vw;
+    margin: auto;
+}
+
+form.empresas>input,
+select {
+    width: 90vw;
+    height: 30px;
+    margin: 3% auto 7% auto;
+    background: radial-gradient(100% 1877.78% at 0% 50%, rgba(255, 255, 255, 0.42) 0%, rgba(255, 255, 255, 0.06) 100%);
+    backdrop-filter: blur(20px);
+    border-radius: 72px;
+}
+
+form.empresas>input#mensaje {
+    height: 200px;
+    background: radial-gradient(100% 1877.78% at 0% 0%, rgba(255, 255, 255, 0.42) 0%, rgba(255, 255, 255, 0.06) 100%);
+    backdrop-filter: blur(20px);
+    border-radius: 20px;
+    margin-bottom: 0;
+}
+
+form.empresas>label {
+    margin-bottom: 12%;
+    font-size: 1.2rem;
+    font-weight: 900;
+    color: white;
+}
+
+form.empresas>input[type=submit] {
+    width: 40%;
+    height: 40px;
+    margin: auto;
+    background: #F7B05B;
+    backdrop-filter: blur(4px);
+    border-radius: 74px;
+    font-size: 1.2rem;
+    font-weight: 900;
+    text-transform: uppercase;
+}
+
+
+
+
+/* page not found */
+
+
+body.pagenotfound {
+    width: 100vw;
+    height: 100vh;
+}
+
+#noencontrado {
+    color: white;
+    font-size: 2rem;
+    text-transform: uppercase;
+    margin: 40% auto 10% auto;
+    text-align: center;
+}
+
+
+
+/* Ventana Modal */
+
+#menu {
+    display: none;
+    width: 40vw;
+    height: 100vw;
+    background: radial-gradient(100% 9216% at 0% 0%, rgba(19, 60, 64, 0.9) 0%, rgba(8, 72, 135, 1) 100%);
+    border: 2px solid rgba(255, 255, 255, 0.3);
+    backdrop-filter: blur(20px);
+    border-radius: 30px 0px 0px 30px;
+    position: absolute;
+    right: 0;
+    top: 0;
+    z-index: 10;
+}
+
+#menu>ul>li {
+    all: unset;
+    padding: 10%;
+    text-align: right;
+}
+
+#menu>ul>li>a {
+    font-size: 1.2rem;
+    font-weight: 900;
+    color: var(--color5);
+}
+
+#menu>ul {
+    display: flex;
+    flex-flow: column;
+    box-sizing: border-box;
+    padding: 10% 2% 10% 0;
+}
+
+
+
+@media (min-width: 768px) {
+
+    a {
+        text-decoration: none;
+        font-size: 2rem;
+        font-weight: 900;
+    }
+
+    .logo-principal {
+        width: 4.5rem;
+        height: 4.5rem;
+    }
+
+    .logo-missing-desktop {
+        display: inline-block;
+        width: 28rem;
+        height: auto;
+    }
+
+    .menu-hamburguesa {
+        width: 2.4rem;
+        height: 2.4rem;
+    }
+
+    .logo-footer {
+        width: auto;
+        height: 130px;
+    }
+
+    .youtube,
+    .facebook,
+    .instagram {
+        width: 3.6rem;
+        height: 3.6rem;
+    }
+
+    .card>.boton-slide {
+        width: 6.5%;
+        transform: rotate(-90deg);
+        position: absolute;
+        right: 10%;
+    }
+
+    .glass-over>.boton-slide {
+        width: 10%;
+        transform: rotate(-90deg);
+        margin: 0 auto 5% auto;
+    }
+
+    h1 {
+        color: var(--color5);
+        font-weight: 900;
+        font-size: 4rem;
+        text-transform: uppercase;
+    }
+
+    h2 {
+        font-size: 3.6rem;
+    }
+
+    h4 {
+        font-weight: 400;
+        font-size: 2.6rem;
+        text-transform: uppercase;
+        color: white;
+    }
+
+    h3 {
+        color: var(--color1);
+        font-weight: 900;
+        font-size: 2.2rem;
+        text-transform: uppercase;
+    }
+
+    h5 {
+        font-weight: 700;
+        font-size: 1rem;
+    }
+
+    p {
+        font-weight: 400;
+        font-size: 2.4rem;
+        color: white;
+    }
+
+    ::placeholder {
+        color: white;
+    }
+
+    button {
+        width: 13vw;
+        height: 60px;
+    }
+
+    body {
+        width: 100vw;
+        background: radial-gradient(100% 100% at 0% 0%, #133C40 0%, #084887 50.35%, #133C40 100%);
+    }
+
+    hr {
+        width: 90%;
+        margin: auto;
+        height: 3px;
+        background-color: white;
+        border: none;
+        margin: 5% auto 5% auto;
+    }
+
+    /* Home */
+
+
+    article {
+        width: 100vw;
+        margin: 2% auto 2% auto;
+    }
+
+    header.home {
+        width: 100vw;
+        height: 750px;
+        background-image: url(./imagenes/desktop-home-header-background.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        display: grid;
+        grid-template-columns: 50vw 50vw;
+        grid-template-rows: 70% 30%;
+    }
+
+    .nav-mobile {
+        display: none;
+    }
+
+    header.home>.nav-desktop {
+        background: radial-gradient(100% 9216% at 0% 0%, rgba(255, 255, 255, 0.14) 0%, rgba(8, 72, 135, 0.49) 100%);
+        border: 2px solid rgba(255, 255, 255, 0.3);
+        backdrop-filter: blur(20px);
+        border-radius: 0px 0px 30px 30px;
+        width: 100vw;
+        height: 165px;
+        box-sizing: border-box;
+        padding: 4% 6% 3% 10%;
+        display: flex;
+        flex-flow: row;
+        justify-content: space-between;
+
+    }
+
+    header.chicosperdidos>.nav-desktop,
+    header.novedades>.nav-desktop,
+    header.voluntariado>.nav-desktop {
+        background: radial-gradient(100% 9216% at 0% 0%, rgba(255, 255, 255, 0.14) 0%, rgba(8, 72, 135, 0.49) 100%);
+        border: 2px solid rgba(255, 255, 255, 0.3);
+        backdrop-filter: blur(20px);
+        border-radius: 0px 0px 30px 30px;
+        width: 100vw;
+        height: 165px;
+        box-sizing: border-box;
+        padding: 2% 5% 3% 5%;
+        display: flex;
+        flex-flow: row;
+        justify-content: space-between;
+    }
+
+    nav>ul {
+        width: 75%;
+        list-style: none;
+        display: flex;
+        flex-flow: row;
+        justify-content: space-between;
+    }
+
+    nav>ul>li {
+        width: 40%;
+        height: 100px;
+        background: unset;
+        backdrop-filter: none;
+        border-radius: none;
+        margin: 0;
+        box-sizing: border-box;
+        padding-top: 3.2%;
+        display: flex;
+        flex-flow: row;
+        justify-content: center;
+    }
+
+    nav>ul>li>a {
+        font-weight: 600;
+        font-size: 1.8rem;
+        text-transform: uppercase;
+        color: var(--color5);
+    }
+
+    nav>ul>li>a:hover {
+        color: var(--color4);
+    }
+
+    .home>nav>ul>li>#home {
+        color: var(--color1);
+        font-weight: 900;
+    }
+
+    header>.botones.home {
+        width: 48vw;
+        display: flex;
+        flex-flow: row;
+        justify-content: flex-end;
+        align-self: flex-start;
+        box-sizing: border-box;
+        padding-right: 10%;
+    }
+
+    header>h2 {
+        color: var(--color5);
+        width: 49vw;
+        display: grid;
+        grid-column: 2 / 3;
+        align-self: flex-end;
+        text-align: right;
+        box-sizing: border-box;
+        padding-right: 15%;
+        padding-bottom: 3%;
+        padding-left: 15%;
+    }
+
+    /* contador home */
+
+    section.home {
+        width: 100vw;
+    }
+
+    .home.contador {
+        width: 60vw;
+        justify-content: center;
+        align-items: center;
+        margin: 5% auto 5% auto;
+    }
+
+    .contador>h4 {
+        margin-top: 3rem;
+        margin-bottom: 2rem;
+        text-align: center;
+    }
+
+    ul {
+        list-style: none;
+        display: flex;
+        flex-flow: row;
+    }
+
+    li {
+        width: 15%;
+        height: 130px;
+        background: radial-gradient(90.88% 90.88% at 5.84% 3.65%, rgba(255, 255, 255, 0.49) 0%, rgba(255, 255, 255, 0.07) 100%);
+        backdrop-filter: blur(95px);
+        border-radius: 20px;
+        font-weight: 900;
+        font-size: 7.2rem;
+        color: var(--color5);
+        margin: 0.5rem auto 0.5rem auto;
+        text-align: center;
+        padding-top: 2.8%;
+    }
+
+    /* termina contador */
+
+    .home.objetivos {
+        width: 100vw;
+        height: 600px;
+        background: none;
+        mix-blend-mode: none;
+        box-shadow: none;
+        backdrop-filter: none;
+        border-radius: none;
+        text-align: center;
+        box-sizing: border-box;
+        backdrop-filter: none;
+    }
+
+    article.objetivos>video {
+        height: 500px;
+        width: auto;
+        position: absolute;
+        right: 10%;
+        margin-top: 1%;
+    }
+
+    #glass-objetivos {
+        background: radial-gradient(95.15% 518.12% at 0% 0%, rgba(255, 255, 255, 0.42) 0%, rgba(255, 255, 255, 0.06) 100%);
+        box-shadow: 4px 4px 20px rgba(0, 0, 0, 0.1);
+        backdrop-filter: blur(20px);
+        border-radius: 50px;
+        height: 350px;
+        width: 45vw;
+        position: absolute;
+        left: 120px;
+        margin-top: 6.5%;
+        box-sizing: border-box;
+        padding: 3.5%;
+        text-align: left;
+        z-index: 1;
+    }
+
+    .objetivos>div>p {
+        margin: 7% auto 1.5rem auto;
+    }
+
+    .home.conoce {
+        width: 100vw;
+        height: 700px;
+        background-image: url(./imagenes/desktop-home-chicos-perdidos.jpg);
+        padding: 0;
+        box-sizing: border-box;
+        padding: 10.5%;
+    }
+
+    .conoce>.over-glass {
+        background: radial-gradient(100% 317.03% at 0% 2.64%, rgba(6, 72, 134, 0.56) 0%, rgba(6, 72, 134, 0.14) 100%);
+        border-radius: 50px;
+        width: 60%;
+        margin: auto;
+    }
+
+    .over-glass>p {
+        color: var(--color5);
+        font-weight: 400;
+    }
+
+    .over-glass>button {
+        margin: 7% auto 0 auto;
+    }
+
+    .home.novedades {
+        width: 100vw;
+        height: 560px;
+        background: none;
+        mix-blend-mode: none;
+        box-shadow: none;
+        backdrop-filter: none;
+        border-radius: 0;
+    }
+
+    #glass-novedades {
+        width: 44%;
+        height: 400px;
+        background: radial-gradient(99.9% 343.54% at 0.04% 99.87%, rgba(243, 243, 243, 0.06) 2.24%, rgba(243, 243, 243, 0.42) 100%);
+        backdrop-filter: blur(4px);
+        border-radius: 50px;
+        margin-top: 3.5%;
+        box-sizing: border-box;
+        padding: 5%;
+        padding-left: 10%;
+        text-align: left;
+        z-index: 1;
+        position: absolute;
+        left: 850px;
+    }
+
+    .novedades>div>p {
+        margin: 7% auto 1.5rem auto;
+    }
+
+    .home.novedades>button {
+        margin: 5% auto 0 auto;
+        display: inline;
+        justify-self: center;
+    }
+
+    .home.novedades>img {
+        height: 500px;
+        width: auto;
+        position: absolute;
+        left: 120px;
+    }
+
+    .home.equipo {
+        width: 100vw;
+        height: 660px;
+        display: block;
+        background: radial-gradient(100% 317.03% at 0% 2.64%, rgba(255, 255, 255, 0.49) 0%, rgba(255, 255, 255, 0.07) 100%);
+        box-shadow: 8px 8px 25px rgba(0, 0, 0, 0.1);
+        backdrop-filter: blur(15px);
+        border-radius: 50px;
+        box-sizing: border-box;
+        padding: 3%;
+    }
+
+    .home.equipo>h2 {
+        text-align: center;
+    }
+
+    .home.equipo>p {
+        margin: 1.5% auto 1.5rem auto;
+        text-align: center;
+    }
+
+    .imagenes-equipo {
+        width: 85%;
+        display: flex;
+        flex-flow: row;
+        justify-content: space-between;
+        margin: auto;
+        margin-top: 3%;
+    }
+
+    .estamos-ayudarte {
+        width: 80%;
+        height: 200px;
+        display: grid;
+        grid-template-columns: 1fr 2fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        gap: 3%;
+        row-gap: 15%;
+        box-sizing: border-box;
+        padding: 2.5%;
+        margin: 5% auto 5% au;
+    }
+
+    .estamos-ayudarte>h4 {
+        display: grid;
+        grid-column: 1 / 2;
+        grid-row: 1 / 3;
+        color: var(--color5);
+        text-align: right;
+        box-sizing: border-box;
+        padding-top: 3%;
+    }
+
+    #numero-telefono {
+        display: grid;
+        grid-column: 2 / 3;
+        grid-row: 1 / 2;
+        background: #18A0FB;
+        border-radius: 15px;
+        height: 50px;
+        width: 60%;
+        font-size: 2.4rem;
+        font-weight: 700;
+        text-align: center;
+        color: var(--color5);
+        box-sizing: border-box;
+        padding-top: 1.5%;
+    }
+
+    #mail {
+        display: grid;
+        grid-column: 2 / 3;
+        grid-row: 2 / 3;
+        background: #18A0FB;
+        border-radius: 15px;
+        height: 50px;
+        width: 100%;
+        font-size: 2.4rem;
+        font-weight: 700;
+        text-align: center;
+        color: var(--color5);
+        box-sizing: border-box;
+        padding-top: 1.5%;
+    }
+
+    button.home.contactanos {
+        display: grid;
+        grid-column: 3 / 4;
+        grid-row: 2 / 3;
+        height: 50px;
+        box-sizing: border-box;
+        padding-top: 3.5%;
+        margin: 0;
+    }
+
+    /*footer*/
+    .footer-mobile {
+        display: none;
+    }
+
+    .footer-desktop {
+        width: 100vw;
+        height: 275px;
+        background: radial-gradient(100% 9216% at 0% 0%, rgba(255, 255, 255, 0.7) 0.19%, rgba(66, 152, 211, 0.07) 100%);
+        border: 2px solid rgba(255, 255, 255, 0.3);
+        backdrop-filter: blur(40px);
+        border-radius: 30px 30px 0px 0px;
+        display: grid;
+        box-sizing: border-box;
+        padding: 2%;
+        grid-template-columns: 1.5fr 1.5fr 2fr 3.5fr;
+        gap: 3%;
+        margin-top: 3%;
+    }
+
+    .redes {
+        width: 100%;
+        display: grid;
+        grid-column: 1 / 2;
+    }
+
+    .logo-footer {
+        margin: 0 auto 10% auto;
+    }
+
+    .iconos {
+        width: 90%;
+        display: flex;
+        justify-content: space-evenly;
+        margin: auto;
+    }
+
+    .contacto {
+        display: grid;
+        grid-column: 2 / 3;
+    }
+
+    footer p {
+        font-size: 1.4rem;
+        font-weight: 700;
+    }
+
+    footer h3 {
+        font-size: 2rem;
+    }
+
+    .newsletter {
+        grid-column: 3 / 4;
+    }
+
+    .newsletter>form {
+        margin: 8% 0 0 0;
+        width: 25vw;
+    }
+
+    input#newsletter {
+        all: unset;
+        width: 100%;
+        height: 45px;
+        background: radial-gradient(100% 1877.78% at 0% 0%, rgba(255, 255, 255, 0.42) 0%, rgba(255, 255, 255, 0.06) 100%);
+        backdrop-filter: blur(20px);
+        border-radius: 72px;
+    }
+
+    input[type=submit] {
+        width: 10vw;
+        height: 45px;
+        background: #F7B05B;
+        border-radius: 50px;
+        margin: 3% 0 0 0;
+        font-size: 1.2rem;
+        font-weight: 900;
+        text-transform: uppercase;
+    }
+
+    input#newsletter::placeholder {
+        box-sizing: border-box;
+        padding-left: 5%;
+        color: var(--color1);
+        font-size: 1.2rem;
+        font-weight: 700;
+    }
+
+
+    /*termina footer*/
+
+
+
+
+    /* Chicos Pedidos */
+
+    header.chicosperdidos {
+        width: 100vw;
+        height: 450px;
+        background-image: url(./imagenes/desktop-chicosperdidos-header-background.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+
+    .chicosperdidos>nav>ul>li>#chicos {
+        color: var(--color1);
+        font-weight: 900;
+    }
+
+    header~h1 {
+        display: block;
+        width: 90vw;
+        margin: 5% auto 0 auto;
+    }
+
+    /*busqueda*/
+    form.buscar {
+        width: 90vw;
+        height: 65px;
+        background: radial-gradient(100% 1877.78% at 0% 0%, rgba(255, 255, 255, 0.42) 0%, rgba(255, 255, 255, 0.06) 100%);
+        backdrop-filter: blur(20px);
+        border-radius: 72px;
+        margin: 5% auto 5% auto;
+        text-transform: uppercase;
+        font-weight: 500;
+        font-size: 2rem;
+        display: flex;
+        flex-flow: row;
+        justify-content: space-between;
+    }
+
+    form.buscar>input#buscar {
+        all: unset;
+        margin-left: 5%;
+    }
+
+    form.buscar>input[type=submit] {
+        width: 30%;
+        height: 65px;
+        font-size: 2rem;
+        font-weight: 900;
+        background: radial-gradient(100% 3938.02% at 0% 0%, #F7B05B 0%, #F7B05B 100%);
+        border-radius: 47px;
+        margin-top: 0;
+    }
+
+    /*termina buscador*/
+
+    .chico-cuatro,
+    .chico-cinco,
+    .chico-seis,
+    .chico-siete,
+    .chico-ocho,
+    .chico-nueve {
+        display: flex !important;
+    }
+
+    section.chicosperdidos {
+        width: 90vw;
+        display: flex;
+        flex-flow: column;
+        margin: auto;
+    }
+
+    section.chicosperdidos>article {
+        height: 400px;
+        display: flex;
+        flex-flow: column;
+        justify-content: flex-end;
+    }
+
+    article>.card {
+        height: 120px;
+        background: radial-gradient(96.42% 525.19% at 3.58% 6.88%, rgba(255, 255, 255, 0.56) 0%, rgba(255, 255, 255, 0.08) 100%);
+        box-shadow: 4px 4px 20px rgba(0, 0, 0, 0.1);
+        backdrop-filter: blur(15px);
+        border-radius: 30px 30px 0px 0px;
+        display: flex;
+        flex-flow: column;
+        box-sizing: border-box;
+        padding: 8% 15% 8% 8%;
+    }
+
+    .card>p {
+        font-size: 1.2rem;
+        font-weight: 600;
+        color: var(--color1);
+        margin: 2% 0 1% 0;
+    }
+
+    .card>h3 {
+        font-size: 1.3rem;
+    }
+
+    .card>p+p {
+        font-style: oblique;
+    }
+
+    p.show {
+        display: none;
+    }
+
+    article.perdido {
+        height: 400px;
+        width: 90vw;
+    }
+
+    section.chicosperdidos {
+        width: 80vw;
+        padding: 0;
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-between;
+    }
+
+    section.chicosperdidos>article {
+        height: 500px;
+        width: 30%;
+        display: flex;
+        flex-flow: column;
+        justify-content: flex-end;
+    }
+
+    article>.card {
+        height: 150px;
+        background: radial-gradient(96.42% 525.19% at 3.58% 6.88%, rgba(255, 255, 255, 0.56) 0%, rgba(255, 255, 255, 0.08) 100%);
+        box-shadow: 4px 4px 20px rgba(0, 0, 0, 0.1);
+        backdrop-filter: blur(15px);
+        border-radius: 30px 30px 0px 0px;
+        display: flex;
+        flex-flow: column;
+        justify-self: flex-end;
+        box-sizing: border-box;
+        padding: 8% 15% 8% 8%;
+        margin: 0;
+    }
+
+    .card>p {
+        font-size: 1.8rem;
+        font-weight: 600;
+        color: var(--color1);
+        margin: 2% 0 1% 0;
+    }
+
+    .card>h3 {
+        font-size: 2rem;
+    }
+
+    .card>p+p {
+        font-style: oblique;
+    }
+
+    p.show {
+        display: none;
+    }
+
+
+    button.ver-mas {
+        margin: 5% auto 0 auto;
+    }
+
+
+
+    /*novedades*/
+
+
+    header.novedades {
+        height: 450px;
+        background-image: url(./imagenes/desktop-novedades-header-background.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+
+    .novedades>nav>ul>li>#novedades {
+        color: var(--color1);
+        font-weight: 900;
+    }
+
+    section.novedades {
+        width: 100vw;
+    }
+
+    .novedades>article {
+        margin: 7% auto 0 auto;
+    }
+
+    article.convenio {
+        width: 80vw;
+        height: 500px;
+        background-image: url(./imagenes/novedades-home.jpg);
+        background-size: 60%;
+        background-repeat: no-repeat;
+        background-position: left;
+    }
+
+    .convenio>.glass-over {
+        width: 45%;
+        height: 400px;
+        background: radial-gradient(122.86% 295.52% at 100% 100%, rgba(243, 243, 243, 0.06) 2.24%, rgba(243, 243, 243, 0.42) 100%);
+        backdrop-filter: blur(4px);
+        border-radius: 50px;
+        position: relative;
+        left: 55%;
+        bottom: 8%;
+        box-sizing: border-box;
+        padding: 5%;
+    }
+
+    article.diamond {
+        width: 60vw;
+        height: 500px;
+        background-image: url(./imagenes/novedades-diamond-film-desktop.jpg);
+        background-size: 40%;
+        background-position: 90%;
+        background-repeat: no-repeat;
+    }
+
+    .diamond>.glass-over {
+        width: 60%;
+        height: 400px;
+        background: radial-gradient(122.86% 295.52% at 100% 100%, rgba(243, 243, 243, 0.06) 2.24%, rgba(243, 243, 243, 0.42) 100%);
+        backdrop-filter: blur(4px);
+        border-radius: 50px;
+        position: relative;
+        right: 0%;
+        bottom: 8%;
+        box-sizing: border-box;
+        padding: 5%;
+    }
+
+    article.proyecto {
+        width: 60vw;
+        height: 570px;
+        background-image: url(./imagenes/novedades-proyecto-no-encontrado-desktop.jpg);
+        background-size: 50%;
+        background-position: 5%;
+        background-repeat: no-repeat;
+    }
+
+    .proyecto>.glass-over {
+        width: 50%;
+        height: 565px;
+        background: radial-gradient(190.39% 228.04% at 0% 0%, rgba(243, 243, 243, 0.42) 2.24%, rgba(243, 243, 243, 0.06) 100%);
+        backdrop-filter: blur(4px);
+        border-radius: 50px;
+        position: relative;
+        left: 50%;
+        box-sizing: border-box;
+        padding: 5%;
+    }
+
+    .glass-over>.boton-slide {
+        display: none;
+    }
+
+    .glass-over>h3 {
+        display: block;
+        margin: auto;
+        color: var(--color5);
+    }
+
+    .glass-over>p {
+        display: block;
+        text-align: center;
+        margin: auto;
+        color: var(--color5);
+    }
+
+    .glass-over>.ver-mas {
+        display: block;
+    }
+
+
+
+    /* voluntariado */
+
+    header.voluntariado {
+        height: 450px;
+        background-image: url(./imagenes/desktop-voluntariado-header-background.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+
+    .voluntariado>nav>ul>li>#voluntariado {
+        color: var(--color1);
+        font-weight: 900;
+    }
+
+    .button-bar {
+        width: 90vw;
+        height: 64px;
+        background: none;
+        backdrop-filter: none;
+        border-radius: none;
+        margin: 0;
+        box-sizing: border-box;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        text-align: center;
+        margin: 5% auto 0 auto;
+    }
+
+    .button-donacion {
+        grid-column: 1 / 2;
+        background: radial-gradient(100% 1877.78% at 0% 0%, rgba(255, 255, 255, 0.42) 0%, rgba(255, 255, 255, 0.06) 100%);
+        backdrop-filter: blur(20px);
+        border-radius: 72px;
+        margin: 0 2% 0 2%;
+    }
+
+    .button-voluntariado {
+        all: unset;
+        grid-column: 2 / 3;
+        background: radial-gradient(100% 1877.78% at 0% 0%, rgba(255, 255, 255, 0.42) 0%, rgba(255, 255, 255, 0.06) 100%);
+        backdrop-filter: blur(20px);
+        border-radius: 72px;
+        margin: 0 2% 0 2%;
+    }
+
+    .button-empresa {
+        all: unset;
+        grid-column: 3 / 4;
+        background: radial-gradient(100% 3938.02% at 0% 0%, #FFFFFF 0%, rgba(255, 255, 255, 0.4) 100%);
+        backdrop-filter: blur(20px);
+        border-radius: 49px;
+    }
+
+    .button-donacion>a,
+    .button-voluntariado>a {
+        font-size: 2rem;
+        font-weight: 600;
+        text-transform: uppercase;
+        color: white;
+    }
+
+    .button-empresa>a {
+        font-size: 2rem;
+        font-weight: 900;
+        text-transform: uppercase;
+        color: var(--color1);
+    }
+
+    hr+h2 {
+        width: 90vw;
+    }
+
+    section.informacion {
+        width: 90vw;
+        margin: auto;
+        background: radial-gradient(100% 9216% at 0% 0%, rgba(255, 255, 255, 0.5) 0.19%, rgba(255, 255, 255, 0.075) 100%);
+        border: 2px solid rgba(255, 255, 255, 0.1);
+        box-sizing: border-box;
+        padding: 3% 0 5% 0;
+        backdrop-filter: blur(10px);
+        border-radius: 30px;
+    }
+
+    article.financiamiento,
+    article.corporativo {
+        width: 80vw;
+        box-sizing: border-box;
+        padding: 2%;
+        display: grid;
+        grid-template-columns: 60% 40%;
+        grid-template-rows: 20% 80%;
+        gap: 5%;
+        row-gap: 20%;
+    }
+
+    article.redessociales {
+        width: 80vw;
+        box-sizing: border-box;
+        padding: 2%;
+        display: grid;
+        grid-template-columns: 40% 60%;
+        grid-template-rows: 20% 80%;
+        gap: 5%;
+        row-gap: 20%;
+    }
+
+    article.financiamiento>p,
+    article.corporativo>p {
+        grid-column: 1 / 2;
+        grid-row: 1/ 3;
+        text-align: right;
+        font-size: 1.8rem;
+    }
+
+    article.redessociales>p {
+        grid-column: 2 / 3;
+        grid-row: 1/ 3;
+        text-align: left;
+        font-size: 1.8rem;
+    }
+
+    article.financiamiento>img,
+    article.corporativo>img {
+        grid-column: 2 / 3;
+        grid-row: 2 / 3;
+        margin: 0 auto 0 auto;
+        width: 30%;
+    }
+
+    article.redessociales>img {
+        grid-column: 1 / 2;
+        grid-row: 2 / 3;
+        margin: 0 auto 0 auto;
+        width: 30%;
+    }
+
+    article.financiamiento>h3,
+    article.corporativo>h3 {
+        grid-column: 2 / 3;
+        grid-row: 1 / 2;
+        font-size: 1.4rem;
+        font-weight: 900;
+        color: var(--color4);
+        margin: 0 5% 0 0;
+        font-size: 2.4rem;
+    }
+
+    article.redessociales>h3 {
+        grid-column: 1 / 2;
+        grid-row: 1 / 2;
+        font-size: 1.4rem;
+        font-weight: 900;
+        color: var(--color4);
+        margin: 0 5% 0 0;
+        text-align: right;
+        font-size: 2.4rem;
+    }
+
+    section.formulario>article {
+        width: 50vw;
+        margin: 5% 0 0 5%;
+    }
+
+    section.formulario {
+        width: 90vw;
+        height: 600px;
+        background: radial-gradient(100% 275.3% at 0.3% 0%, rgba(255, 255, 255, 0.6) 0%, rgba(255, 255, 255, 0.42) 0.01%, rgba(255, 255, 255, 0.12) 100%, rgba(255, 255, 255, 0.09) 100%);
+        border: 2px solid rgba(255, 255, 255, 0.1);
+        box-sizing: border-box;
+        backdrop-filter: blur(10px);
+        border-radius: 40px;
+        margin: auto;
+    }
+
+    form.empresas {
+        width: 70vw;
+        height: 600px;
+        margin: 5% 0 0 5%;
+        display: grid;
+        grid-template-columns: 40vw 40vw;
+        grid-template-rows: 1fr 1fr 4fr;
+    }
+
+    #nombre {
+        width: 35vw;
+        display: grid;
+        grid-column: 1 / 2;
+        grid-row: 1 / 2;
+    }
+
+    #e-mail {
+        width: 35vw;
+        display: grid;
+        grid-column: 2 / 3;
+        grid-row: 1 / 2;
+    }
+
+    #titular {
+        width: 35vw;
+        display: grid;
+        grid-column: 1 / 2;
+        grid-row: 2 / 3;
+    }
+
+    #aporte {
+        width: 35vw;
+        display: grid;
+        grid-column: 2 / 3;
+        grid-row: 2 / 3;
+    }
+
+    #mensaje {
+        width: 35vw;
+        display: grid;
+        grid-column: 1 / 2;
+        grid-row: 3 / 4;
+    }
+
+    #enviar {
+        width: 10vw;
+        height: 50px;
+        display: grid;
+        grid-column: 2 / 3;
+        grid-row: 3 / 4;
+        justify-items: baseline;
+    }
+
+    label#mensaje {
+        margin: 0;
+        height: 300px;
+    }
+
+    input#mensaje {
+        height: 100px;
+    }
+
+    input#enviar {
+        position: relative;
+        top: 45%
+    }
+
+    br {
+        display: none;
+    }
+
+    form.empresas>input {
+        margin: 4% 0 0 0;
+    }
+
+    form.empresas>select {
+        margin: 4% 0 0 0;
+    }
+
+    form.empresas>label {
+        font-size: 1.6rem;
+    }
+
+    form.empresas>input[type=submit] {
+        width: 40%;
+        height: 60px;
+        margin: 0;
+        background: #F7B05B;
+        backdrop-filter: blur(4px);
+        border-radius: 74px;
+        font-size: 1.2rem;
+        font-weight: 900;
+        text-transform: uppercase;
+    }
+
+
+    /* page not found */
+
+
+    body.pagenotfound {
+        width: 100vw;
+    }
+
+    #noencontrado {
+        color: white;
+        font-size: 4rem;
+        text-transform: uppercase;
+        margin: 10% auto 0 auto;
+        text-align: center;
+    }
+
+}

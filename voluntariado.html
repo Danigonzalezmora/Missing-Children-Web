@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="icon" href="./iconos/iso-missing.svg" type="image/svg"/>
+    <title>Voluntariado de Empresas - Missing Children</title>
+    <meta name="description"
+        content="Si querés colaborar como empresa, Missing Children te invita a financiar proyectos, participar de las redes o realizar un voluntariado corporativo. Valoramos mucho el aporte de todo tipo y toda magnitud. Ingresá a nuestro sitio web para informarte más acerca de las diversas formas en las que podes colaborar.">
+</head>
+
+<body>
+    <header class="voluntariado">
+        <nav class="nav-mobile">
+            <a href="./index.html"><img class="logo-principal" src="./iconos/iso-missing.svg" alt="missing children"></a>
+            <h1>Voluntariado</h1>
+            <img class="menu-hamburguesa" src="./iconos/menu-hamburguesa.png" alt="icono menu">
+
+            <div id="menu">
+                <ul id="menu-modal">
+                    <li><a href="./index.html">Home</a></li>
+                    <li> <a href="./chicosperdidos.html"> Chicos Perdidos</a></li>
+                    <li> <a href="./voluntariado.html"> Voluntariado</a></li>
+                    <li><a href="./novedades.html"> Novedades</a></li>
+                    <li> <a href="./page-not-found.html"> Contacto</a></li>
+                </ul>
+            </div>
+
+        </nav>
+        <nav class="nav-desktop">
+            <a href="./index.html"><img class="logo-missing-desktop" src="./iconos/logo-missing-desktop.svg" alt="missing children"></a>
+            <ul>
+                <li>
+                    <a id="home" href="./index.html">
+                        home</a></li>
+                <li>
+                    <a id="chicos" href="./chicosperdidos.html">
+                        chicos perdidos</a></li>
+                <li>
+                    <a id="voluntariado" href="./voluntariado.html">
+                        voluntariado</a></li>
+                <li>
+                    <a id="novedades" href="./novedades.html">
+                        novedades</a></li>
+                <li>
+                    <a id="contacto" href="./page-not-found.html">
+                        contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <h1>voluntariado</h1>
+
+    <div class="button-bar">
+        <button class="button-donacion">
+            <a href="./page-not-found.html">
+                donación
+            </a>
+        </button>
+        <button class="button-voluntariado">
+            <a href="./page-not-found.html">
+                voluntariado
+            </a>
+        </button>
+        <button class="button-empresa">
+            <a href="./voluntariado.html">
+                empresa
+            </a>
+        </button>
+    </div>
+
+    <hr>
+
+    <h2>si sos una empresa, también podes colaborar!</h2>
+
+    <section class="informacion">
+        <article class="financiamiento">
+            <img src="./iconos/voluntariado-financiacion-proyectos.png" width="50%" alt="icono financiamiento">
+            <h3>financiamiento de proyectos</h3>
+            <p>Una donación o colaboración financiera a nombre de tu empresa deja un gran impacto en el cumplimiento 
+                de nuestros objetivos y el desarrollo de nuestras actividades. </p>
+        </article>
+        <article class="redessociales">
+            <img src="./iconos/voluntariado-redes-sociales.png" width="50%" alt="icono participacion redes sociales">
+            <h3>participación en redes sociales</h3>
+            <p>A través de una colaboración digital, se va a poder viralizar nuestra causa. Usemos las herramientas de 
+                comunicación modernas para poder lograr transmitir nuestro mensaje a diversos públicos. Las plataformas 
+                de Internet son un medio de mayor penetración a distancia y nos apoyan en la realización de nuestros proyectos. </p>
+        </article>
+        <article class="corporativo">
+            <img src="./iconos/voluntariado-corporativo.png" width="50%" alt="icono voluntariado corporativo">
+            <h3>voluntariado corporativo</h3>
+            <p>A través de nuestro programa de voluntariado corporativo promovemos actividades e iniciativas de 
+                alto valor social y fomentamos la participación y compromiso de nuestros voluntarios en su realización.</p>
+        </article>
+    </section>
+
+    <hr>
+
+    <h2>dejanos tus dudas e inquietudes en el siguiente formulario</h2>
+
+    <section class="formulario">
+        <article>
+            <form class="empresas" action="Consulta" autocomplete="off">
+                <label id="nombre" for="nombre">Nombre de la Empresa</label>
+                <br>
+                <input type="text" id="nombre" required minlength="5">
+
+                <br>
+
+                <label id="e-mail" for="e-mail">E-Mail</label>
+                <br>
+                <input type="email" id="e-mail" name="email" required email>
+
+                <br>
+
+                <label id="titular" for="titular">Titular a cargo</label>
+                <br>
+                <input type="text" id="titular" required minlength="5">
+
+                <br>
+
+                <label id="aporte" for="aporte">Aportar en el Area de...</label>
+                <br>
+                <select name="areas" id="aporte">
+                    <option value="financiación-de-proyectos">Financiación de Proyectos</option>
+                    <option value="participacion-Redes">Participacion en Redes Sociales</option>
+                    <option value="voluntariado-corporativo">Voluntariado Corporativo</option>
+                </select>
+
+                <br>
+
+                <label id="mensaje" for="mensaje">Mensaje</label>
+                <br>
+                <input type="text" id="mensaje" required minlength="25">
+                <br>
+                <br>
+                <input id="enviar" type="submit" value="enviar">
+            </form>
+            </artcile>
+    </section>
+
+    <footer class="footer-mobile">
+        <div class="redes">
+            <img class="logo-footer" src="./iconos/logo-footer.svg" alt="missing children">
+            <div class="iconos">
+                <a href="https://www.youtube.com/user/MissingChildrenArg">
+                    <img class="youtube" src="./iconos/youtube.png" alt="youtube">
+                </a>
+                <a href="https://www.instagram.com/missingchildrenarg/?hl=es">
+                    <img class="instagram" src="./iconos/instagram.png" alt="instagram">
+                </a>
+                <a href="https://es-la.facebook.com/MissingChildrenArg/">
+                    <img class="facebook" src="./iconos/facebook.png" alt="facebook">
+                </a>
+            </div>
+        </div>
+        <div class="contacto">
+            <h3>contacto</h3>
+            <p>info@missingchildren.org</p>
+            <p>0800 - 333 - 5500</p>
+            <p>Camarones 4560, CABA</p>
+            <p>Buenos Aires, Argentina</p>
+        </div>
+        <div class="newsletter">
+            <h3>newsletter</h3>
+            <button class="boton-footer">suscribirse</button>
+        </div>
+    </footer>
+
+
+    <footer class="footer-desktop">
+        <div class="redes">
+            <img class="logo-footer" src="./iconos/logo-footer.svg" alt="missing children">
+            <div class="iconos">
+                <a href="https://www.youtube.com/user/MissingChildrenArg">
+                    <img class="youtube" src="./iconos/youtube.png" alt="youtube">
+                </a>
+                <a href="https://www.instagram.com/missingchildrenarg/?hl=es">
+                    <img class="instagram" src="./iconos/instagram.png" alt="instagram">
+                </a>
+                <a href="https://es-la.facebook.com/MissingChildrenArg/">
+                    <img class="facebook" src="./iconos/facebook.png" alt="facebook">
+                </a>
+            </div>
+        </div>
+        <div class="contacto">
+            <h3>contacto</h3>
+            <p>info@missingchildren.org</p>
+            <p>0800 - 333 - 5500</p>
+            <p>Camarones 4560, CABA</p>
+            <p>Buenos Aires, Argentina</p>
+        </div>
+        <div class="newsletter">
+            <h3>newsletter</h3>
+            <form>
+                <input id="newsletter" type="email" name="newsletter"
+                    placeholder="Dejanos tu mail para recibir mas información" required email>
+                <br>
+                <input type="submit" value="Suscribirse">
+            </form>
+        </div>
+        <div id="map" style="width: 100%"><iframe width="100%" height="200px" frameborder="0" scrolling="no"
+                marginheight="0" marginwidth="0"
+                src="https://maps.google.com/maps?width=100%25&amp;height=450&amp;hl=es&amp;q=Camarones,%20CABA+(Missing%20Children)&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"><a
+                    href="https://www.gps.ie/">gps devices</a></iframe></div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+          integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+
+     <script> 
+          $(".menu-hamburguesa").on("click", function () {
+               $("#menu").show();
+          });
+     </script>
+
+
+
+</body>
+
+</html>
